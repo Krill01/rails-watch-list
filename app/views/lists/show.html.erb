@@ -1,0 +1,16 @@
+<br>
+<h1><%= @list.name %></h1>
+
+<ul>
+  <% @list.bookmarks.each do |bookmark| %>
+    <li><%= image_tag bookmark.movie.poster_url, alt: "poster of the movie", width: 200 %></li>
+    <li ><strong><%= bookmark.movie.title %></strong></li>
+    <li ><%= bookmark.movie.overview %></li>
+    <li ><%= bookmark.comment %></li>
+    <br>
+  <% end %>
+</ul>
+<br>
+<%= link_to '+ add a new bookmark', new_list_bookmark_path(@list) %>
+<br>
+<%= link_to "Retourner à la liste des lists", lists_path %>
