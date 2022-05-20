@@ -7,6 +7,7 @@
     <li ><strong><%= bookmark.movie.title %></strong></li>
     <li ><%= bookmark.movie.overview %></li>
     <li ><%= bookmark.comment %></li>
+    <li><%= link_to 'Delete', list_bookmark_path(bookmark) %></li>
     <br>
   <% end %>
 </ul>
