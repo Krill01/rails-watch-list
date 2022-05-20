@@ -1,0 +1,18 @@
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #1EDD88;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #1BCB7F;
+  color: white;
+}
+
+.button-add {
+  margin: 16px 0;
+  display: flex;
+  justify-content: end;
+}
